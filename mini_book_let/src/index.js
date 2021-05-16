@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Book from './Book'
-
 import './index.css'
 
 function Booklet() {
