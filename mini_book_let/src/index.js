@@ -30,6 +30,18 @@ const books = [
     title : "The Good Sister: A NovelThe Good Sister: A Novel",
     author : "Sally Hepworth"
   },
+
+  {
+    img : "https://images-na.ssl-images-amazon.com/images/I/51zMKWZCRfS._AC_SX184_.jpg",
+    title : "The Good Sister: A NovelThe Good Sister: A Novel",
+    author : "Sally Hepworth"
+  },
+
+  {
+    img : "https://images-na.ssl-images-amazon.com/images/I/51zMKWZCRfS._AC_SX184_.jpg",
+    title : "The Good Sister: A NovelThe Good Sister: A Novel",
+    author : "Sally Hepworth"
+  },
 ];
 
 ReactDOM.render(<Booklet/>, document.getElementById('root'));
