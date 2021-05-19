@@ -8,12 +8,9 @@ function Booklet() {
     <section className="booklet">
       
       {books.map((book)=>{
-        const { img, title, author } = book;
         return (
           <Book 
-            img = {img}
-            title = {title}
-            author = {author}
+            book={book}
           />
         )
       })}
