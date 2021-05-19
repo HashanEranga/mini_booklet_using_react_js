@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Book(props) {
-    const {img, title, author } = props.book;
+    const {img, title, author } = props;
     return (
         <div className="book">
             

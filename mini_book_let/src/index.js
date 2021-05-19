@@ -9,8 +9,9 @@ function Booklet() {
       
       {books.map((book)=>{
         return (
-          <Book key = {book.id}
-            book={book}
+          <Book 
+            key = {book.id}
+            {...book}
           />
         )
       })}
