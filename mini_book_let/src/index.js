@@ -1,20 +1,38 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Book from './Book';
 import './index.css'
 
 function Booklet() {
   return(
     <section className="booklet">
-      {newList}
+      
+      {books.map((book)=>{
+        const { img, title, author } = book;
+        return (
+          <Book 
+            img = {img}
+            title = {title}
+            author = {author}
+          />
+        )
+      })}
     </section>
   )
 }
 
-const List = ['hashan', 'eranga', 'perera'];
-const newList = List.map((items) => {
-  return(
-    <h1>{items}</h1>
-  )
-})
+const books = [
+  {
+    img : "https://images-na.ssl-images-amazon.com/images/I/41+2DiWeWAS._AC_SX184_.jpg",
+    title : "The Premonition: A Pandemic StoryThe Premonition: A Pandemic Story ",
+    author : "Michael Lewis"
+  },
+  
+  {
+    img : "https://images-na.ssl-images-amazon.com/images/I/51zMKWZCRfS._AC_SX184_.jpg",
+    title : "The Good Sister: A NovelThe Good Sister: A Novel",
+    author : "Sally Hepworth"
+  },
+];
 
 ReactDOM.render(<Booklet/>, document.getElementById('root'));
